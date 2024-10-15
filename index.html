@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Box</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: bouncing 5s ease-in-out infinite; 
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+            overflow: hidden; 
+        }
+
+       
+        @keyframes bouncing {
+            0% {
+                transform: translate(0,0);
+            }
+            20% {
+                transform: translate(200px, -200px); 
+            }
+            30% {
+                transform: translate(400px, 0);
+            }
+            40% {
+                transform: translate(600px, -200px); 
+            }
+            50% {
+                transform: translate(800px, 0); 
+            }
+            60% {
+                transform: translate(1000px, -200px);
+            }
+            70% {
+                transform: translate(1200px, 0); 
+            }
+            80% {
+                transform: translate(1400px, -200px);
+            }
+            90% {
+                transform: translate(1600px, 0); 
+            }
+            100% {
+                transform: translate(1800px, 0); 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
